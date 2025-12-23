@@ -1,0 +1,7 @@
+{
+  "name": "卡路里查詢工具 (Calorie Analysis Tool)",
+  "description": "一個輕量化的 Web 工具，核心目標是讓使用者透過上傳食物照片，利用人工智慧快速獲得餐點內容的文字描述、熱量估算及營養重點建議。遵循極簡金屬風格設計。",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
