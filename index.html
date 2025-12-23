@@ -13,19 +13,53 @@
             background-color: #f8fafc;
         }
         .metallic-gradient {
-            background: linear-gradient(145deg, #e2e8f0, #cbd5e1);
-            box-shadow: 4px 4px 8px #bebebe, -4px -4px 8px #ffffff;
+            background: linear-gradient(145deg, #ffffff, #f1f5f9);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(226, 232, 240, 0.8);
         }
         .metallic-button {
             background: linear-gradient(145deg, #2d5a27, #1e3d1a);
-            transition: all 0.3s ease;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
         .metallic-button:hover {
             filter: brightness(1.1);
-            transform: translateY(-1px);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(45, 90, 39, 0.3);
         }
         .metallic-button:active {
-            transform: translateY(1px);
+            transform: translateY(0px);
+        }
+        .analysis-content {
+            line-height: 1.8;
+            color: #334155;
+        }
+        .analysis-content b, .analysis-content strong {
+            color: #1e293b;
+            font-weight: 700;
+        }
+        .analysis-content ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .analysis-content li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .analysis-content li::before {
+            content: "•";
+            position: absolute;
+            left: 0.5rem;
+            color: #2d5a27;
+            font-weight: bold;
+        }
+        .section-header {
+            color: #2d5a27;
+            border-left: 4px solid #2d5a27;
+            padding-left: 12px;
+            margin: 1.5rem 0 1rem 0;
+            font-weight: 700;
+            font-size: 1.1rem;
         }
     </style>
 <script type="importmap">
@@ -40,6 +74,5 @@
 </head>
 <body>
     <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
 </body>
 </html>
